@@ -13,7 +13,7 @@
                 {
                     "name": "backup-vault",
                     "location": "canadacentral",
-                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/recovery-services-vault/20190516/template/azuredeploy.json",
+                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/recovery-service-vault/20190516/template/azuredeploy.json",
                     "parametersFile": "dependancy-recovery-service-vault.parameters.json",
                     "dependsOn": [
                         "resourcegroups"
