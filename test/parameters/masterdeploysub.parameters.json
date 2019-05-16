@@ -9,12 +9,16 @@
                     "location": "canadacentral",
                     "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/resourcegroups/20190514/template/azuredeploysub.json",
                     "parametersFile": "dependancy-resourcegroups-canadacentral.parameters.json"
-                },
+                }
+            ]
+        },
+        "deploymentRGArray": {
+            "value": [
                 {
-                    "name": "vnet-subnet",
-                    "location": "canadacentral",
-                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/vnet-subnet/20190516/template/azuredeploysub.json",
-                    "parametersFile": "dependancy-vnet-subnet.parameters.json",
+                    "name": "backup-vault",
+                    "resourceGroup": "PwS2-validate-backup-policy-RG",
+                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/recovery-service-vault/20190516/template/azuredeploy.json",
+                    "parametersFile": "dependancy-recovery-service-vault.parameters.json",
                     "dependsOn": [
                         "resourcegroups"
                     ]
