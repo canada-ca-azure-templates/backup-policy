@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "backupVaultName": {
-            "value": "PwS2-validate-[unique]backup-vault"
+            "value": "PwS2-validate-[unique]backup1-vault"
         },
         "backupVaultRGName": {
             "value": "PwS2-validate-backup-policy-RG"
